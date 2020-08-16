@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Foco Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Foco Black'), url('../font/FOCOBLACK.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Foco';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Foco'), url('../font/FOCO.woff') format('woff');
+}
