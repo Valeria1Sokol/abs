@@ -232,7 +232,7 @@
 
     .section2 .text-content .text {
         font-size: 3.6vw;
-        margin: 4vw 0;
+        margin: 4vw 0 9.8vw;
     }
 
     .section2 .block2 .img {
@@ -250,7 +250,7 @@
     }
 
     .section3 {
-        padding: 7vw 8vw 0;
+        padding: 7vw 7vw 0;
         flex-wrap: wrap;
     }
 
