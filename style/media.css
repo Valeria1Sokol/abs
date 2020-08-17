@@ -220,7 +220,7 @@
     }
 
     .section2 .text-content {
-        padding: 0 10vw;
+        padding: 0 9vw;
         width: 100%;
     }
 
@@ -231,7 +231,7 @@
     }
 
     .section2 .text-content .text {
-        font-size: 3vw;
+        font-size: 3.6vw;
         margin: 4vw 0;
     }
 
@@ -250,7 +250,7 @@
     }
 
     .section3 {
-        padding: 7vw 12vw 0;
+        padding: 7vw 8vw 0;
         flex-wrap: wrap;
     }
 
@@ -265,7 +265,7 @@
     }
 
     .section3 .benefits p {
-        font-size: 3.2vw;
+        font-size: 3.6vw;
     }
 
     .section3 .all-benefits {
@@ -306,8 +306,8 @@
     }
 
     .section5 .content .title {
-        font-size: 3vw;
-        width: 75%;
+        font-size: 3.6vw;
+        width: 100%;
     }
 
     .section5 .blockRight {
@@ -316,7 +316,7 @@
     }
 
     .section5 .content .list-line .note {
-        font-size: 3vw;
+        font-size: 3.6vw;
     }
 
     .section5 .content .list-line {
