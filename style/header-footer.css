@@ -122,10 +122,6 @@ header .logo img {
     font-size: 1.1vw;
 }
 
-.header-menu .bottom-menu-text li:first-of-type a {
-    color: #81b726;
-}
-
 .header-menu .bottom-menu-text li:last-of-type {
     align-items: center;
 }

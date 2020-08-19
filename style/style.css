@@ -1,3 +1,7 @@
+.header-menu .bottom-menu-text li:first-of-type a {
+    color: #81b726;
+}
+
 .section1 {
     width: 100vw;
     display: flex;
