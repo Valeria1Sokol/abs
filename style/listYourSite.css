@@ -33,6 +33,7 @@
     margin: 0 0 2.1vw;
 }
 
+
 .section1 .text {
     font-size: 1.88vw;
     font-family: 'Poppins';
@@ -165,7 +166,8 @@
     font-family: 'Foco Black';
 }
 
-.section2 form div input {
+.section2 form div input,
+.select {
     width: 100%;
     border: none;
     outline: none;
@@ -174,12 +176,28 @@
     margin: 0 0 1.83vw;
 }
 
+.select {
+    /* reset */
+
+    border-radius: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url(../img/select.png);
+    background-position: 93% center;
+    background-repeat: no-repeat;
+    background-size: 3%;
+}
+
 .section2 form div input::placeholder {
     text-transform: uppercase;
     font-size: 0.79vw;
     letter-spacing: 1.5px;
     color: #999999;
 }
+
 
 .section2 .redBtn {
     font-size: 1vw;
@@ -322,7 +340,8 @@
         letter-spacing: 2px;
     }
 
-    .section2 form div input {
+    .section2 form div input,
+    .section2 form div select {
         padding: 1.94vw 2.57vw;
         margin: 0 0 2.83vw;
     }
@@ -449,9 +468,14 @@
         margin-left: 1.63vw;
     }
 
-    .section2 form div input {
+    .section2 form div input,
+    .section2 form div select {
         padding: 2.94vw 3.57vw;
         margin: 0 0 3.83vw;
+    }
+
+    .select {
+        background-size: 2%;
     }
 
     .section2 form div input::placeholder {
