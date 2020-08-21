@@ -53,6 +53,7 @@
 
 .section1 .redBtn p {
     padding: 0.94vw 5.3vw;
+    text-transform: uppercase;
 }
 
 .triangle-up {
@@ -161,7 +162,7 @@
     color: #474746;
     font-size: 0.73vw;
     margin: 0 0 0.7vw;
-    letter-spacing: 3px;
+    letter-spacing: 0.12vw;
     text-transform: uppercase;
     font-family: 'Foco Black';
 }
@@ -217,7 +218,7 @@
 .section3 {
     width: 100vw;
     background-color: white;
-    padding: 4.4vw 0;
+    padding: 4.4vw 0 0;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -232,7 +233,7 @@
     background-size: cover;
     background-image: url(../img/black-samsung-tablet.png);
     width: 55%;
-    padding: 20.8vw 0;
+    padding: 21vw 0;
 }
 
 .section3 .blockRight {
