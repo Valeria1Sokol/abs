@@ -289,6 +289,13 @@
     margin: 0 1vw 0 0;
     width: 2.1vw;
 }
+footer .footer-top .menu div:nth-of-type(2) a:nth-of-type(2) {
+    color: #82ba26;
+}
+
+footer .footer-top .menu div:first-of-type a:first-of-type {
+    color: white;
+}
 
 @media all and (max-width:800px) {
 
