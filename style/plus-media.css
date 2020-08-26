@@ -2,6 +2,9 @@
     .section2 .block2 .img {
         width: 54%;
     }
+     .nav-pills li:nth-of-type(3) a {
+        color: #81b726;
+    }
 }
 
 @media all and (max-width:800px) {
@@ -374,7 +377,7 @@
         margin: 0 auto;
     }
 
-    .section3 {}
+   
 
     .section3 .block {
         flex-direction: column-reverse;
