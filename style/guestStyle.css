@@ -76,7 +76,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4.7vw 5.7vw 3.7vw 0;
+    padding: 4.7vw 3vw 3.7vw 0;
 }
 
 .section2 .block2 {
@@ -91,7 +91,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 51%;
+    width: 52%;
 }
 
 .section2 .text-content h4 {
@@ -101,7 +101,7 @@ a:hover {
 }
 
 .section2 .text-content .text {
-    color: #72787a;
+    color: black;
     font-size: 1.9vw;
     text-align: left;
     margin-top: 1.5vw;
@@ -109,7 +109,7 @@ a:hover {
 }
 
 .section2 .block2 .img {
-    width: 49%;
+    width: 48%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -135,7 +135,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2.5vw 21vw;
+    padding: 2.5vw 20vw;
 }
 
 .section3 h1 {
@@ -154,7 +154,7 @@ a:hover {
 }
 
 .section3 .benefits {
-    width: 28%;
+    width: 30%;
     height: 12vw;
     display: flex;
     flex-direction: column;
@@ -344,7 +344,7 @@ a:hover {
 }
 
 .section5 p {
-    width: 54%;
+    width: 55%;
     line-height: 2.3vw;
     font-size: 1.41vw;
     color: #333333;
@@ -660,7 +660,6 @@ a:hover {
     background-image: url(../img/plus-sect7-bg.png);
     padding: 3.34vw 3.34vw;
     background-color: #474746;
-    margin: 0 0 0.5vw;
 }
 
 .section9 .text {

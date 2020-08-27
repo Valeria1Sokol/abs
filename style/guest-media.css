@@ -256,7 +256,6 @@
 
     .section9 {
         background-position: -96% 50%;
-        margin: 0 0 2.5vw;
     }
 }
 
@@ -307,7 +306,7 @@
     }
 
     .section2 .text-content h4 {
-        font-size: 8vw;
+        font-size: 7.6vw;
         text-align: center;
     }
 
@@ -345,12 +344,13 @@
     }
 
     .section3 h1 {
-        font-size: 6.8vw;
+        width: 95%;
+        font-size: 7.2vw;
         text-align: center;
     }
 
     .section3 .benefits {
-        width: 50%;
+        width: 51%;
         height: 30vw;
         margin: 0 0 4vw;
     }
