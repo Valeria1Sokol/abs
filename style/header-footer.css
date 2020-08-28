@@ -143,7 +143,7 @@ header .logo img {
 
 .header-menu .bottom-menu-text img {
     width: 1.17vw;
-    padding: 0.4vw 0 0 0.53vw;
+    padding: 0vw 0 0.1vw 0.53vw;
 }
 
 .btn {
@@ -190,6 +190,47 @@ header .logo img {
 
 .grayBtn {
     background-color: #474746;
+}
+
+header .bottom-menu-text li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+}
+
+header .subMenu {
+    position: absolute;
+    width: 140%;
+    top: 100%;
+    left: -20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #474746;
+    z-index: 100;
+    visibility: hidden;
+    transition: visibility .4s;
+    padding: 1vw 0;
+}
+
+header .bottom-menu-text .subMenu a {
+    padding: 1vw 1.5vw;
+    cursor: pointer;
+}
+
+header .bottom-menu-text .subMenu li:first-of-type a {
+    color: white;
+}
+
+header .bottom-menu-text .subMenu li:first-of-type a:hover {
+    color: #7eb228;
+}
+
+header .subOpen:hover .subMenu {
+    visibility: visible;
 }
 
 footer {
@@ -350,22 +391,6 @@ footer .footer-bottom p {
     -webkit-transition: .3s ease-in all;
     transition: .3s ease-in all;
 }
-/*
-
-.btn:hover::after {
-    opacity: 1;
-}
-
-.btn:hover:before {
-    left: 100%;
-    width: 25%;
-}
-
-.btn:hover:after {
-    left: 100%;
-    width: 70%;
-}
-*/
 
 .nav__container,
 .burger {
@@ -413,11 +438,14 @@ footer .footer-bottom p {
         font-size: 3vw;
         text-transform: uppercase;
         text-align: left;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
     }
 
     .nav-pills img {
         width: 2vw;
-        margin: 0.8vw 0 0;
+        margin-left: 0.8vw;
     }
 
     .nav__container {
@@ -566,6 +594,30 @@ footer .footer-bottom p {
         align-items: flex-start;
         width: 25%;
         margin: 0 auto;
+    }
+
+    .nav__container .subOpen {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .nav__container .subMenu {
+        visibility: visible;
+        position: relative;
+        width: 100%;
+        left: 0;
+        top: 0;
+        padding: 1.5vw 1.5vw 0;
+    }
+
+    .nav__container .subMenu li {
+        margin: 0;
+    }
+
+    .nav-pills .subMenu li a {
+        color: white !important;
     }
 
     footer .footer-top .menu a,
