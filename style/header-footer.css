@@ -225,12 +225,16 @@ header .bottom-menu-text .subMenu li:first-of-type a {
     color: white;
 }
 
-header .bottom-menu-text .subMenu li:first-of-type a:hover {
+header .bottom-menu-text .subMenu li a:hover {
     color: #7eb228;
 }
 
 header .subOpen:hover .subMenu {
     visibility: visible;
+}
+header .subOpen a:hover
+{
+    color: white;
 }
 
 footer {

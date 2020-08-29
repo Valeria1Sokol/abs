@@ -1,6 +1,3 @@
-.header-menu .bottom-menu-text li:nth-of-type(2) a {
-    color: #81b726;
-}
 
 a:hover {
     color: white;
@@ -102,10 +99,12 @@ a:hover {
 
 .section2 .text-content .text {
     color: black;
-    font-size: 1.9vw;
+    font-size: 1.41vw;
     text-align: left;
     margin-top: 1.5vw;
     text-transform: uppercase;
+    width: 92%;
+    line-height: 1.5;
 }
 
 .section2 .block2 .img {
@@ -154,7 +153,7 @@ a:hover {
 }
 
 .section3 .benefits {
-    width: 30%;
+    width: 29%;
     height: 12vw;
     display: flex;
     flex-direction: column;
@@ -163,7 +162,7 @@ a:hover {
 }
 
 .section3 .benefits p {
-    font-size: 1.28vw;
+    font-size: 1.2vw;
     color: #81b726;
     text-align: center;
 }
@@ -191,7 +190,7 @@ a:hover {
 }
 
 .section4 h1 {
-    font-size: 4.22vw;
+    font-size: 3.28vw;
     color: #81b726;
     font-family: 'Foco Black';
 }
@@ -199,7 +198,7 @@ a:hover {
 .section4 .all-box {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 5vw 6.77vw 4.2vw;
 }
@@ -212,7 +211,7 @@ a:hover {
 }
 
 .section4 .box {
-    width: 48%;
+    width: 35%;
     padding: 2.87vw 0;
     display: flex;
     flex-direction: column;
@@ -222,6 +221,10 @@ a:hover {
     transition: background-color .7s;
     background-color: white;
     color: white;
+}
+
+.section4 .box:first-of-type {
+    margin: 0 8vw 0 0;
 }
 
 .section4 .box:hover {
@@ -237,7 +240,7 @@ a:hover {
 .section4 .box .icon {
     height: 5.2vw;
     max-height: 100%;
-    margin: 0 1vw 0 0;
+    margin: 0 0.5vw 0 0;
     background-blend-mode: multiply;
     width: 6vw;
     background-size: cover;
@@ -248,7 +251,7 @@ a:hover {
 
 .section4 .box:nth-of-type(2) .icon {
     width: 4.65vw;
-    margin: 0 2.1vw 0 0;
+    margin: 0 1.1vw 0 0;
 }
 
 .section4 .box:hover .icon {
@@ -257,7 +260,7 @@ a:hover {
 
 .section4 .box h3 {
     color: #81b726;
-    font-size: 3.91vw;
+    font-size: 3.4vw;
     font-family: 'Foco Black';
     transition: color .5s;
 }
@@ -268,13 +271,13 @@ a:hover {
 }
 
 .section4 .box .note {
-    height: 7.5vw;
+    height: 4.5vw;
     color: #333333;
-    font-size: 1.67vw;
+    font-size: 1.1vw;
     font-family: 'Poppins';
     text-align: center;
     text-transform: uppercase;
-    margin: 2.1vw 0 4vw;
+    margin: 2.1vw 0;
     transition: color .5s;
 }
 
@@ -295,8 +298,8 @@ a:hover {
 }
 
 .section4 .btn p {
-    padding: 1.46vw 5.9vw;
-    font-size: 1.3vw;
+    padding: 0.73vw 3.44vw;
+    font-size: 0.79vw;
 }
 
 .section4 .grayBtn {

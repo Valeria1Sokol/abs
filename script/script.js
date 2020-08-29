@@ -33,4 +33,10 @@
               $('.nav__container').css('max-height', menu_height + 'px');
           }
       });
+      $('.subOpen').on('click', function (e) {
+//          $('.subOpen>a').hover({
+//              color: 'white'
+//          })
+      })
+
   });
