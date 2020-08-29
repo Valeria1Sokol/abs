@@ -182,7 +182,7 @@
     }
 
     .section2 .box {
-        width: 67.8;
+        width: 67.8%;
         padding: 4.87vw 4vw;
         margin: 0 0 7vw;
     }
@@ -332,6 +332,10 @@
 
     .section5 .content .list-line {
         margin: 0 0 3.5vw;
+    }
+
+    .section5 .content .list-line br {
+        display: none;
     }
 
     .section5 .content .list-line img {
