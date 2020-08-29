@@ -393,6 +393,10 @@
         margin: 0 0 7vw;
     }
 
+    .section4 .box:first-of-type {
+        margin: 0 0 7vw;
+    }
+
     .section4 .box .icon {
         height: 10.2vw;
         width: 13vw;
