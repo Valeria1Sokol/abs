@@ -334,32 +334,30 @@
     </footer>
     <script>
         $(document).ready(function() {
-            if (window.innerWidth > 768) {
-                $('#sliderSwipe').owlCarousel({
-                    items: 3,
-                    loop: true,
-                    nav: false,
-                    dots: false,
-                    touchDrag: true,
-                    responsiveClass: true,
-                    slideBy: 1,
-                    center: true,
-                    transitions: '1s'
-                });
-            } else {
-                $('#sliderSwipe').owlCarousel({
-                    items: 1,
-                    loop: true,
-                    nav: true,
-                    dots: false,
-                    touchDrag: true,
-                    responsiveClass: true,
-                    slideBy: 1,
-                    center: true,
-                    transitions: '1s'
-                });
-            }
+            //            if (window.innerWidth > 768) {
+            var owl = $('#sliderSwipe').owlCarousel({
+                items: 3,
+                loop: true,
+                nav: false,
+                dots: false,
+                touchDrag: true,
+                responsiveClass: true,
+                slideBy: 1,
+                center: true,
+                transitions: '1s',
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true,
+                    },
+                    800: {
+                        items: 3
+                    }
+                }
+            });
+        })
 
-        });
     </script>
-</body></html>
+</body>
+
+</html>

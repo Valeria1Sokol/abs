@@ -39,13 +39,13 @@
                     <li><a href="" class="insta"><img alt="" src="img/instagram.png"></a></li>
                 </ul>
             </div>
-             <div class="bottom-menu">
+            <div class="bottom-menu">
                 <ul class="bottom-menu-text">
                     <li><a href="index.html">home</a></li>
                     <li class="subOpen">
                         <a>GUEST POSTS <img alt="" src="img/arrow-down.png"></a>
                         <ul class="subMenu">
-                             <li><a href="guestPage.html">GUEST POSTS</a></li>
+                            <li><a href="guestPage.html">GUEST POSTS</a></li>
                             <li><a href="linkPage.html">Link Insertion</a></li>
                         </ul>
                     </li>
@@ -136,23 +136,23 @@
             <div class="step2Box">
                 <h1>STEP 2:</h1>
                 <h2>Your Deatils</h2>
-                  <form>
-                <div>
-                    <label>NAME</label>
-                    <input type='text' placeholder="Text here">
-                </div>
-                <div>
-                    <label>EMAIL</label>
-                    <input type='text' placeholder="Text here">
-                </div>
-                <div>
-                    <label>What Describes Your Business</label>
-                    <input type='text' placeholder="Text here">
-                </div>
-            </form>
-            <a class="redBtn btn">
-                <p>APPLY</p>
-            </a>
+                <form>
+                    <div>
+                        <label>NAME</label>
+                        <input type='text' placeholder="Text here">
+                    </div>
+                    <div>
+                        <label>EMAIL</label>
+                        <input type='text' placeholder="Text here">
+                    </div>
+                    <div>
+                        <label>What Describes Your Business</label>
+                        <input type='text' placeholder="Text here">
+                    </div>
+                </form>
+                <a class="redBtn btn">
+                    <p>APPLY</p>
+                </a>
             </div>
         </div>
     </section>
@@ -275,32 +275,25 @@
     </footer>
     <script>
         $(document).ready(function() {
-            if (window.innerWidth > 425) {
-                $('#sliderPoster').owlCarousel({
-                    items: 3,
-                    loop: true,
-                    nav: true,
-                    dots: false,
-                    touchDrag: true,
-                    responsiveClass: true,
-                    slideBy: 1,
-                    center: true,
-                    transitions: '1s'
-                });
-            } else {
-                $('#sliderPoster').owlCarousel({
-                    items: 1,
-                    loop: true,
-                    nav: true,
-                    dots: false,
-                    touchDrag: true,
-                    responsiveClass: true,
-                    slideBy: 1,
-                    center: true,
-                    transitions: '1s'
-                });
-            }
-
+            $('#sliderPoster').owlCarousel({
+                items: 3,
+                loop: true,
+                nav: true,
+                dots: false,
+                touchDrag: true,
+                responsiveClass: true,
+                slideBy: 1,
+                center: true,
+                transitions: '1s',
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    426: {
+                        items: 3
+                    }
+                }
+            });
 
         });
     </script>

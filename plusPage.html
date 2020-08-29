@@ -365,7 +365,6 @@
     </footer>
     <script>
         $(document).ready(function() {
-            if (window.innerWidth > 425) {
                 $('#sliderPoster').owlCarousel({
                     items: 3,
                     loop: true,
@@ -375,7 +374,15 @@
                     responsiveClass: true,
                     slideBy: 1,
                     center: true,
-                    transitions: '1s'
+                    transitions: '1s',
+                     responsive: {
+                        0: {
+                            items: 1
+                        },
+                        426: {
+                            items: 3
+                        }
+                    }
                 });
                 $('#sliderSwipe').owlCarousel({
                     items: 3,
@@ -386,32 +393,17 @@
                     responsiveClass: true,
                     slideBy: 1,
                     center: true,
-                    transitions: '1s'
+                    transitions: '1s',
+                     responsive: {
+                        0: {
+                            items: 1,
+                            nav: true,
+                        },
+                        426: {
+                            items: 3
+                        }
+                    }
                 });
-            } else {
-                $('#sliderPoster').owlCarousel({
-                    items: 1,
-                    loop: true,
-                    nav: true,
-                    dots: false,
-                    touchDrag: true,
-                    responsiveClass: true,
-                    slideBy: 1,
-                    center: true,
-                    transitions: '1s'
-                });
-                $('#sliderSwipe').owlCarousel({
-                    items: 1,
-                    loop: true,
-                    nav: true,
-                    dots: false,
-                    touchDrag: true,
-                    responsiveClass: true,
-                    slideBy: 1,
-                    center: true,
-                    transitions: '1s'
-                });
-            }
 
         });
 

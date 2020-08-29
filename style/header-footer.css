@@ -232,8 +232,8 @@ header .bottom-menu-text .subMenu li a:hover {
 header .subOpen:hover .subMenu {
     visibility: visible;
 }
-header .subOpen a:hover
-{
+
+header .subOpen a:hover {
     color: white;
 }
 
@@ -528,13 +528,17 @@ footer .footer-bottom p {
         height: 6.6vw;
         width: 6.6vw;
         text-align: center;
-        padding-top: 27px;
+        /*        padding-top: 27px;*/
         position: relative;
-        top: 0;
+        top: 1.6vw;
         bottom: 0;
         right: 0;
         z-index: 1;
         background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
     }
 
     .btn__toggle.open span:nth-child(1),
@@ -552,13 +556,13 @@ footer .footer-bottom p {
 
     .btn__toggle span {
         display: block;
-        height: 2px;
-        width: 26px;
+        height: 3px;
+        width: 56px;
         background: white;
         position: absolute;
         left: 0;
         right: 0;
-        margin: 41% auto 0 45%;
+        margin: 0;
     }
 
     .btn__toggle span:nth-child(1) {
@@ -567,11 +571,11 @@ footer .footer-bottom p {
 
     .btn__toggle span:nth-child(2),
     .btn__toggle span:nth-child(3) {
-        top: 2.5vw;
+        top: 3vw;
     }
 
     .btn__toggle span:nth-child(4) {
-        top: 3.3vw;
+        top: 4.3vw;
     }
 
     .burger {
@@ -663,8 +667,8 @@ footer .footer-bottom p {
     }
 
     .btn__toggle span {
-        width: 3.4vw;
-        height: 1px;
+        width: 5.4vw;
+        height: 2px;
     }
 
     header .logo,
@@ -759,13 +763,17 @@ footer .footer-bottom p {
 
 @media all and (max-width:425px) {
     .btn__toggle span:nth-child(1) {
-        top: 1.8vw;
+        /*        top: 1.8vw;*/
     }
 }
 
 @media all and (max-width:375px) {
     .btn__toggle span:nth-child(1) {
         top: 1.5vw;
+    }
+
+    .btn__toggle span:nth-child(4) {
+        top: 4.5vw;
     }
 }
 
@@ -774,5 +782,14 @@ footer .footer-bottom p {
     .btn__toggle span:nth-child(2),
     .btn__toggle span:nth-child(3) {
         top: 2.3vw;
+    }
+
+    .btn__toggle span {
+        width: 6.4vw;
+        height: 2px;
+    }
+
+    .btn__toggle span:nth-child(1) {
+        top: 0;
     }
 }
