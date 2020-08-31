@@ -50,13 +50,13 @@
                     <li><a href="" class="insta"><img alt="" src="img/instagram.png"></a></li>
                 </ul>
             </div>
-           <div class="bottom-menu">
+            <div class="bottom-menu">
                 <ul class="bottom-menu-text">
                     <li><a href="index.html">home</a></li>
                     <li class="subOpen">
                         <a>GUEST POSTS <img alt="" src="img/arrow-down.png"></a>
                         <ul class="subMenu">
-                              <li><a href="guestPage.html">GUEST POSTS</a></li>
+                            <li><a href="guestPage.html">GUEST POSTS</a></li>
                             <li><a href="linkPage.html">Link Insertion</a></li>
                         </ul>
                     </li>
@@ -83,7 +83,7 @@
                         <li class="subOpen">
                             <a href="guestPage.html">GUEST POSTS <img alt="" src="img/arrow-down.png"></a>
                             <ul class="subMenu">
-                            <li><a href="linkPage.html">Link Insertion</a></li>
+                                <li><a href="linkPage.html">Link Insertion</a></li>
                             </ul>
                         </li>
                         <li><a href="plusPage.html">ABC PLUS<img alt="" src="img/arrow-down.png"></a></li>
@@ -268,32 +268,6 @@
         <h4>PLANS AND PRICING</h4>
         <h1>CHECK OUR BEST OFFERS </h1>
         <div class="owl-carousel" id="sliderSwipe">
-
-            <div class="item inter">
-                <h2>intermediate</h2>
-                <p class='text'>Our most popular package for<br> medium business’ - This<br> plan offers the best<br> value for money</p>
-                <div>
-                    <h1><span>$</span>120</h1>
-                    <p>per<br>
-                        store</p>
-                </div>
-                <a class="redBtn btn">
-                    <p>CHOOSE</p>
-                </a>
-            </div>
-            <div class="item">
-               <img src="img/20%25-OF-F.png" class="sale">
-                <h2>Business</h2>
-                <p class='text'>Our full service package for larger companies who demand a enterpise level service </p>
-                <div>
-                    <h1><span>$</span>450</h1>
-                    <p>per<br>
-                        store</p>
-                </div>
-                <a class="redBtn btn">
-                    <p>CHOOSE</p>
-                </a>
-            </div>
             <div class="item">
                 <h2>basic</h2>
                 <p class='text'>For smaller campaigns and
@@ -307,6 +281,32 @@
                     <p>CHOOSE</p>
                 </a>
             </div>
+            <div class="item inter centerItem">
+                <h2>intermediate</h2>
+                <p class='text'>Our most popular package for<br> medium business’ - This<br> plan offers the best<br> value for money</p>
+                <div>
+                    <h1><span>$</span>120</h1>
+                    <p>per<br>
+                        store</p>
+                </div>
+                <a class="redBtn btn">
+                    <p>CHOOSE</p>
+                </a>
+            </div>
+            <div class="item">
+                <img src="img/20%25-OF-F.png" class="sale">
+                <h2>Business</h2>
+                <p class='text'>Our full service package for larger companies who demand a enterpise level service </p>
+                <div>
+                    <h1><span>$</span>450</h1>
+                    <p>per<br>
+                        store</p>
+                </div>
+                <a class="redBtn btn">
+                    <p>CHOOSE</p>
+                </a>
+            </div>
+
 
         </div>
     </section>
@@ -365,47 +365,81 @@
     </footer>
     <script>
         $(document).ready(function() {
-                $('#sliderPoster').owlCarousel({
-                    items: 3,
-                    loop: true,
-                    nav: true,
-                    dots: false,
-                    touchDrag: true,
-                    responsiveClass: true,
-                    slideBy: 1,
-                    center: true,
-                    transitions: '1s',
-                     responsive: {
-                        0: {
-                            items: 1
-                        },
-                        426: {
-                            items: 3
-                        }
+            $('#sliderPoster').owlCarousel({
+                items: 3,
+                loop: true,
+                nav: true,
+                dots: false,
+                touchDrag: true,
+                responsiveClass: true,
+                slideBy: 1,
+                center: true,
+                transitions: '1s',
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    426: {
+                        items: 3
                     }
-                });
-                $('#sliderSwipe').owlCarousel({
-                    items: 3,
-                    loop: true,
-                    nav: false,
-                    dots: false,
-                    touchDrag: true,
-                    responsiveClass: true,
-                    slideBy: 1,
-                    center: true,
-                    transitions: '1s',
-                     responsive: {
-                        0: {
-                            items: 1,
-                            nav: true,
-                        },
-                        426: {
-                            items: 3
-                        }
-                    }
-                });
-
+                }
+            });
         });
+        $(document).ready(function() {
+            if ($(window).width() < 854) {
+                startCarousel();
+            } else {
+                $('#sliderSwipe').addClass('off');
+            }
+        });
+
+        $(window).resize(function() {
+            if ($(window).width() < 854) {
+                startCarousel();
+            } else {
+                stopCarousel();
+            }
+        });
+
+        function startCarousel() {
+            $('#sliderSwipe').owlCarousel({
+                items: 3,
+                loop: true,
+                nav: false,
+                dots: false,
+                slideBy: 1,
+                center: true,
+                transitions: '1s',
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true,
+                        touchDrag: true,
+                        responsiveClass: true,
+                    },
+                    800: {
+                        items: 3,
+                        touchDrag: false,
+                        responsiveClass: false,
+                    }
+                }
+            });
+        }
+
+        function stopCarousel() {
+            var owl = $('#sliderSwipe');
+            owl.trigger('destroy.owl.carousel');
+            owl.addClass('off');
+        }
+        $('.item').click(function() {
+            if ($(this).hasClass('centerItem')) {
+                $(this).removeClass('centerItem');
+            } else {
+                $('.item').removeClass('centerItem');
+                $(this).addClass('centerItem');
+
+            }
+        })
 
     </script>
 </body>

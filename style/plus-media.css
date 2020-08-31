@@ -2,7 +2,8 @@
     .section2 .block2 .img {
         width: 54%;
     }
-     .nav-pills li:nth-of-type(3) a {
+
+    .nav-pills li:nth-of-type(3) a {
         color: #81b726;
     }
 }
@@ -189,9 +190,6 @@
         height: 4vw;
     }
 
-    .section7 .item h2 {
-        font-size: 3.6vw;
-    }
 
     .section7 .item .text {
         color: black;
@@ -232,6 +230,78 @@
 
     .section7 .redBtn {
         font-size: 1.6vw;
+    }
+
+    .section7 .item {
+        width: 49.3vw;
+        height: 58.3vw;
+        padding: 5vw 2vw;
+    }
+
+    .section7 .active,
+    .section7 .owl-item {
+        height: 62.5vw;
+        justify-content: center;
+    }
+
+    .section7 .sale {
+        width: 5.3vw;
+        width: 8vw;
+    }
+
+    .section7 .item h2 {
+        font-size: 5.6vw;
+    }
+
+    .section7 .item .text {
+        font-size: 2.8vw;
+        margin: 0;
+        height: 15vw;
+    }
+
+    .section7 .item div h1 {
+        font-size: 12.8vw;
+    }
+
+    .section7 .item div span {
+        font-size: 5.2vw;
+    }
+
+    .section7 .item div p {
+        font-size: 2.5vw;
+        padding: 0 0 0 1.42vw;
+        margin: 0 0 0 2vw;
+    }
+
+    .section7 .center .redBtn {
+        padding: 1.3vw 9vw;
+        font-size: 2.7vw;
+    }
+
+    .section7 .center,
+    .section7 .centerItem {
+        transform: scale(1);
+        z-index: 0;
+    }
+
+    .section7 .owl-nav {
+        width: 166%;
+        height: 10vw;
+        left: -34%;
+        z-index: 10;
+    }
+
+    .section7 .owl-carousel {
+        width: 58%;
+    }
+
+    .section7 .item div h1 {
+        color: #81b726
+    }
+
+    .section7 .redBtn {
+        padding: 1.3vw 9vw;
+        font-size: 2.7vw;
     }
 
     .section8 h1 {
@@ -377,7 +447,7 @@
         margin: 0 auto;
     }
 
-   
+
 
     .section3 .block {
         flex-direction: column-reverse;
@@ -568,21 +638,18 @@
 
     .section7 .item {
         width: 49.3vw;
-        height: 58.3vw;
+        height: 63.3vw;
         padding: 5vw 2vw;
     }
 
     .section7 .active,
     .section7 .owl-item {
-        height: 62.5vw;
+        height: 67.5vw;
         justify-content: center;
     }
 
-
     .section7 .sale {
         width: 5.3vw;
-        right: 5%;
-        top: 1%;
         width: 8vw;
     }
 

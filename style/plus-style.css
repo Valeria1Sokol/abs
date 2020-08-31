@@ -50,7 +50,7 @@
 }
 
 .section1 .redBtn p {
-    padding: 1vw 5.6vw;
+    padding: 1.3vw 6.56vw;
 }
 
 .triangle-up {
@@ -549,17 +549,15 @@
     justify-content: space-between;
     align-items: center;
     padding: 3vw;
-/*    margin: auto;*/
+    margin: 0 1vw;
     background-color: white;
+    position: relative;
+    transition: transform .4s;
 }
 
+.section7 .ccenterItem,
 .section7 .center .item {
     border: 1px solid #81b726;
-}
-
-.section7 .center .item div h1,
-.section7 .center .item div h1 span {
-    color: #81b726;
 }
 
 .section7 .owl-carousel {
@@ -590,9 +588,9 @@
     z-index: 0;
 }
 
-.section7 .center {
+.section7 .centerItem {
     transition: transform .4s;
-    transform: scale(1.15);
+    transform: scale(1.2);
     z-index: 1;
 }
 
@@ -664,6 +662,22 @@
     color: white;
 }
 
+.section7 .centerItem div h1,
+.section7 .center .item div h1,
+.section7 .center .item div h1,
+.section7 .centerItem div h1 span,
+.section7 .center .item div h1 span,
+.section7 .center .item div h1 span {
+    color: #81b726;
+}
+
+.owl-carousel.off {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .section7 .inter {
     background-position: 100% 0%;
     background-repeat: no-repeat;
@@ -674,8 +688,8 @@
 .section7 .sale {
     position: absolute;
     width: 5.3vw;
-    right: 1%;
-    top: 7%;
+    right: -5%;
+    top: -3%;
 }
 
 .section8 {
