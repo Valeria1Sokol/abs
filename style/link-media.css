@@ -18,27 +18,6 @@
     }
 
 
-    .section3 .content .title {
-        font-size: 2.2vw;
-        width: 87%;
-    }
-
-    .section3 .content .list-line .note {
-        font-size: 2.2vw;
-    }
-
-    .section3 .blockLeft {
-        width: 64%;
-    }
-
-    .section3 .content .list {
-        background-position: 0% 0%;
-    }
-
-    .section3 .content .list-line img {
-        width: 3.1vw;
-    }
-
     .owl-carousel .owl-nav button.owl-next,
     .owl-carousel .owl-nav button.owl-prev {
         width: 10vw;
@@ -133,13 +112,17 @@
 }
 
 @media all and (max-width:425px) {
+    .section1 {
+        height: auto;
+    }
+
     .section1 h1 {
         font-size: 8.8vw;
         line-height: 8.3vw;
     }
 
     .section1 .redBtn p {
-        padding: 2.1vw 7.4vw;
+        padding: 2.3vw 7.4vw;
     }
 
     .section1 .text {
@@ -180,17 +163,6 @@
         margin: 0 0 1.41vw;
     }
 
-    .section3 .blockLeft {
-        padding: 0.8vw 18vw 19vw 3.1vw;
-        width: 100%;
-    }
-
-    .section3 .blockLeft p {
-        font-size: 6.3vw;
-        padding: 0.8vw 0vw 11.4vw 4.84vw;
-    }
-
-    .section3,
     .section2 {
         padding: 7.65vw 0;
         flex-direction: column;
@@ -198,33 +170,19 @@
         align-items: center;
     }
 
-    .section3 .blockRight h6 {
-        font-size: 3vw;
-    }
-
-
-    .section3 .blockRight {
-        padding: 0 10vw;
-        margin: 0;
-    }
-
-    .section3 .content .list-line .note,
     .section2 .content .list-line .note {
         font-size: 4vw;
     }
 
-    .section3 .content .list-line,
     .section2 .content .list-line {
         margin: 0 0 3.5vw;
     }
 
-    .section3 .content .list-line img,
     .section2 .content .list-line img {
         width: 4.1vw;
         margin: 1vw 2vw 0 0;
     }
 
-    .section3 .content .list,
     .section2 .content .list {
         padding: 3.4vw 0 7.1vw;
     }

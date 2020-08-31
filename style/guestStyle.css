@@ -5,6 +5,7 @@ a:hover {
 
 .section1 {
     width: 100vw;
+    height: 34.2vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

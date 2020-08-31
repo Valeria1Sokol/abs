@@ -132,6 +132,10 @@
 }
 
 @media all and (max-width:425px) {
+    .section1 {
+        height: auto;
+    }
+
     .section1 h1 {
         font-size: 8.8vw;
     }

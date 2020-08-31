@@ -331,6 +331,10 @@
 }
 
 @media all and (max-width:425px) {
+    .section1 {
+        height: auto;
+    }
+
     .section1 h1 {
         font-size: 8.8vw;
     }
@@ -341,6 +345,10 @@
 
     .section1 .redBtn {
         font-size: 2.5vw;
+    }
+
+    .section1 .redBtn p {
+        padding: 2.3vw 6.56vw;
     }
 
     .section1 .section1-content {

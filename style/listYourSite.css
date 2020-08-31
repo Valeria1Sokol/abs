@@ -4,6 +4,7 @@
 
 .section1 {
     width: 100vw;
+    height: 34.2vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -424,6 +425,9 @@ footer .footer-top .menu div:first-of-type a:first-of-type {
 }
 
 @media all and (max-width:425px) {
+     .section1 {
+        height: auto;
+    }
     .section1 h1 {
         font-size: 8.8vw;
     }
@@ -441,7 +445,7 @@ footer .footer-top .menu div:first-of-type a:first-of-type {
     }
 
     .section1 .redBtn p {
-        padding: 0.94vw 7.3vw;
+        padding: 2.3vw 10.3vw;
     }
 
     .triangle-up {

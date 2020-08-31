@@ -4,6 +4,7 @@
 
 .section1 {
     width: 100vw;
+    height: 34.2vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -50,7 +51,7 @@
 }
 
 .section1 .redBtn p {
-    padding: 1.36vw 4.17vw;
+    padding: 1.3vw 4.17vw;
 }
 
 .triangle-up {
